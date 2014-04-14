@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Приемная комиссия ВГУ - Редактирование факультета</title>
+<LINK rel="stylesheet" type="text/css" href="../css/div.css">
+</head>
+<body id="bod">
+	<div id="main">
+		<div id="header" align="center">
+			<img src="../img/EPAM.png" align="middle">
+			<h1 align="center">Приемная комиссия</h1>
+		</div>
+		<div id="menu">
+			<form action="../result/results.html">
+				<input style="width: 100px" type="submit" value="Ведомость">
+			</form>
+			<br>
+			<form action="../faculty/list.html">
+				<input style="width: 100px" type="submit" value="Факультеты">
+			</form>
+			<br>
+			<form action="../subjects/list.html">
+				<input style="width: 100px" type="submit" value="Предметы">
+			</form>
+			<br>
+			<form action="../index.html">
+				<input style="width: 100px" type="submit" value="Выйти">
+			</form>
+		</div>
+		<div id="content" align="center">
+			<div id="news">
+				<img src="../img/vitebsk_masherova.jpg">
+			</div>
+			<form action="list.html">
+				<table>
+					<tr>
+						<td width="150">Наименование</td>
+						<td><input style="width: 98%;" type="text" value="Математический"></td>
+					</tr>
+					<tr>
+						<td>План приема</td>
+						<td><input style="width: 98%;" type="number" value="60"></td>
+					</tr>
+					<tr>
+						<td rowspan="3">Экзаменационные предметы</td>
+						<td><SELECT style="width: 100%;">
+								<OPTION VALUE="Физика" selected>Физика
+								<OPTION VALUE="Математика">Математика
+								<OPTION VALUE="Биология">Биология
+								<OPTION VALUE="Химия">Химия
+								<OPTION VALUE="Русский язык">Русский язык
+								<OPTION VALUE="Белорусский язык">Белорусский язык
+						</SELECT></td>
+					</tr>
+					<tr>
+						<td><SELECT style="width: 100%;">
+								<OPTION VALUE="Физика">Физика
+								<OPTION VALUE="Математика">Математика
+								<OPTION VALUE="Биология">Биология
+								<OPTION VALUE="Химия" selected>Химия
+								<OPTION VALUE="Русский язык">Русский язык
+								<OPTION VALUE="Белорусский язык">Белорусский язык
+						</SELECT></td>
+					</tr>
+					<tr>
+						<td><SELECT style="width: 100%;">
+								<OPTION VALUE="Физика">Физика
+								<OPTION VALUE="Математика" selected>Математика
+								<OPTION VALUE="Биология">Биология
+								<OPTION VALUE="Химия">Химия
+								<OPTION VALUE="Русский язык">Русский язык
+								<OPTION VALUE="Белорусский язык">Белорусский язык
+						</SELECT></td>
+					</tr>
+				</table>
+				<BR> <input	style="width: 100px" type="reset" value="Сбросить"> 
+				<input style="width: 100px"	type="submit" value="Сохранить">
+			</form>
+		</div>
+		<div id="footer" align="center">
+			Витебский Государственный Университет им. П.М. Машерова<br> Лаборатория Epam<br>2014
+		</div>
+	</div>
+</body>
+</html>

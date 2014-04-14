@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Приемная комиссия ВГУ - Перечень дисциплин</title>
+<LINK rel="stylesheet" type="text/css" href="../css/div.css">
+<script type="text/javascript" src="../js/del.js"></script>
+<script type="text/javascript" src="../js/update.js"></script>
+<script type="text/javascript" src="../js/select.js"></script>
+</head>
+<body id="bod">
+	<div id="main">
+		<div id="header" align="center">
+			<img src="../img/EPAM.png" align="middle">
+			<h1 align="center">Приемная комиссия</h1>
+		</div>
+		<div id="menu">
+			<form action="../result/results.html">
+				<input style="width: 100px" type="submit" value="Ведомость">
+			</form>
+			<br>
+			<form action="../faculty/list.html">
+				<input style="width: 100px" type="submit" value="Факультеты">
+			</form>
+			<br>
+			<form action="../subjects/list.html">
+				<input style="width: 100px" type="submit" value="Предметы">
+			</form>
+			<br>
+			<form action="../index.html">
+				<input style="width: 100px" type="submit" value="Выйти">
+			</form>
+		</div>
+		<div id="content" align="center">
+			<div id="news">
+				<img src="../img/vitebsk_masherova.jpg">
+			</div>
+			<form action="javascript:selectChanged(1)">
+				<table>
+					<tr>
+						<th align="center" width="30">№</th>
+						<th align="center" width="150">Дисциплина</th>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td><input id="bl" width=20px type="text" value="Белорусский язык"></td>
+						<td style="border: 0px"><a href="javascript:update(bl.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(bl.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+					<tr>
+						<td align="center">2</td>
+						<td><input id="bio" width=20px type="text" value="Биология"></td>
+						<td style="border: 0px"><a href="javascript:update(bio.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(bio.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+					<tr>
+						<td align="center">3</td>
+						<td><input id="math" width=20px type="text" value="Математика"></td>
+						<td style="border: 0px"><a href="javascript:update(math.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(math.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+					<tr>
+						<td align="center">4</td>
+						<td><input id="ru" width=20px type="text" value="Русский язык"></td>
+						<td style="border: 0px"><a href="javascript:update(ru.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(ru.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+					<tr>
+						<td align="center">5</td>
+						<td><input id="fiz" width=20px type="text" value="Физика"></td>
+						<td style="border: 0px"><a href="javascript:update(fiz.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(fiz.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+					<tr>
+						<td align="center">6</td>
+						<td><input id="chem" width=20px type="text" value="Химия"></td>
+						<td style="border: 0px"><a href="javascript:update(chem.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(chem.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+					<tr hidden="hud">
+						<td align="center">6</td>
+						<td><input id="chem" width=20px type="text" value="Химия"></td>
+						<td style="border: 0px"><a href="javascript:update(chem.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(chem.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+					<tr id="fm" hidden="">
+						<td align="center">6</td>
+						<td><input id="chem" width=20px type="text" value="Химия"></td>
+						<td style="border: 0px"><a href="javascript:update(chem.value)"><img align="left"
+								src="../img/ok.gif" width="15"></a></td>
+						<td style="border: 0px"><a href="javascript:del(chem.value)"><img align="left"
+								src="../img/delete.gif" width="15"></a></td>
+					</tr>
+				</table>
+			</form>
+			<a href="">Добавить предмет</a>
+		</div>
+		<footer>
+			<div id="footer" align="center">
+				Витебский Государственный Университет им. П.М. Машерова<br> Лаборатория Epam<br>2014
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

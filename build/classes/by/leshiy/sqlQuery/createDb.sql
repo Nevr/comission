@@ -1,0 +1,1 @@
+CREATE database IF NOT EXISTS  AdmissionCommittee DEFAULT CHARACTER SET utf8;

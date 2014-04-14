@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Приемная комиссия ВГУ - Абитуриент</title>
+<LINK rel="stylesheet" type="text/css" href="../css/div.css">
+<script src="../js/select.js"></script>
+</head>
+<body id="bod">
+	<div id="main">
+		<div id="header" align="center">
+			<img src="../img/EPAM.png" align="middle">
+			<h1 align="center">Приемная комиссия</h1>
+		</div>
+		<div id="menu">Железняк Андрей Анатольевич</div>
+		<div id="content" align="center">
+			<div id="news">
+				<img src="../img/vitebsk_masherova.jpg">
+			</div>
+			Выберите факультет <SELECT id="options" onchange="javascript:selectChanged(selectedIndex)"
+				style="width: 200px;" NAME="имя">
+				<OPTION VALUE="Физический">Физический
+				<OPTION VALUE="Математический">Математический
+				<OPTION VALUE="Художественно-графический">Художественно-графический
+				<OPTION selected>
+			</SELECT>
+			<form action="abiturientFix.html">
+				<table id="fm" hidden="">
+					<tr>
+						<td colspan="2">Введите оценки</td>
+					</tr>
+					<tr>
+						<td width="150">Математика</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="6"></td>
+					</tr>
+					<tr>
+						<td width="150">Физика</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="3"></td>
+					</tr>
+					<tr>
+						<td width="150">Русский язык</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="4"></td>
+					</tr>
+					<tr>
+						<td width="150">Балл аттестата</td>
+						<td><input min="1" max="10" maxlength="10" type="text" value="4.6"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Сохранить"></td>
+					</tr>
+				</table>
+				<table id="pm" hidden="">
+					<tr>
+						<td colspan="2">Введите оценки</td>
+					</tr>
+					<tr>
+						<td width="150">Математика</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="6"></td>
+					</tr>
+					<tr>
+						<td width="150">Информатика</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="3"></td>
+					</tr>
+					<tr>
+						<td width="150">Белорусский язык</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="7"></td>
+					</tr>
+					<tr>
+						<td width="150">Балл аттестата</td>
+						<td><input min="1" max="10" maxlength="10" type="text" value="4.6"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Сохранить"></td>
+					</tr>
+				</table>
+				<table id="hud" hidden="">
+					<tr>
+						<td colspan="2">Введите оценки</td>
+					</tr>
+					<tr>
+						<td width="150">Химия</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="1"></td>
+					</tr>
+					<tr>
+						<td width="150">Биология</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="5"></td>
+					</tr>
+					<tr>
+						<td width="150">Физика</td>
+						<td><input min="1" max="10" maxlength="10" type="number" value="2"></td>
+					</tr>
+					<tr>
+						<td width="150">Балл аттестата</td>
+						<td><input min="1" max="10" maxlength="10" type="text" value="4.6"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Сохранить"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<footer>
+			<div id="footer" align="center">
+				Витебский Государственный Университет им. П.М. Машерова<br> Лаборатория Epam<br>2014
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

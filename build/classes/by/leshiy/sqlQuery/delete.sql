@@ -1,0 +1,1 @@
+DELETE FROM subjectslist where id>6;

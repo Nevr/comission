@@ -1,0 +1,6 @@
+INSERT subjects (name) VALUES ("Математика"), ("Физика"), ("Русский язык"), ("Белорусский язык"), ("Химия"),("Биология");
+INSERT faculty (name, check_rating, recruit_plan) VALUES ("Механико-технологический", 22,55), ("Конструкторско-технологический", 24,40), ("Художественный", 20,25), ("Экономический", 29,80);
+INSERT subjectslist (faculty_id, subject_id) VALUES (1, 1), (1, 2), (1, 4), (2, 1), (2, 2), (2, 3), (3, 3), (3, 4), (3, 6), (4, 2), (4, 5), (4, 6);
+INSERT abiturient (faculty_id, diplom_rating, surname, patronomic, name) VALUES (1, 4, "Петров", "Петр", "Петрович"), (2, 8, "Иванов", "Петр", "Петрович"), (4, 5, "Петров", "Иван", "Петрович"), (3, 7, "Петров", "Петр", "Иванович"),(3, 6, "Иванов", "Иван", "Петрович"),(2, 4, "Петров", "Иван", "Иванович");
+INSERT INTO rating (abiturient_id,subject_id) select abiturient.id,subjects.id FROM abiturient,subjects,subjectslist,faculty where abiturient.faculty_id=faculty.id AND faculty.id = subjectslist.faculty_id AND subjectslist.id=subjects.id;
+INSERT INTO statement (abiturient_id,faculty_id) select abiturient.id,faculty.id FROM abiturient,faculty where abiturient.faculty_id=faculty.id;

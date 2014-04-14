@@ -1,0 +1,10 @@
+select * from abiturient;
+select * from faculty;
+select * from subjects;
+select * from subjectsList;
+select * from statement;
+select * from rating;
+select abiturient.surname,abiturient.name,faculty.name,subjects.name from abiturient,faculty,subjectslist,subjects where abiturient.faculty_id=faculty.id AND faculty.id = subjectsList.faculty_id AND subjectsList.id=subjects.id;
+select abiturient.surname,abiturient.name,faculty.name,subjects.name,rating.rating from abiturient,faculty,subjectsList,subjects,rating where abiturient.faculty_id=faculty.id AND faculty.id = subjectsList.faculty_id AND subjectsList.id=subjects.id and abiturient.id = rating.abiturient_id AND subjects.id = rating.subject_id;
+select abiturient.surname,abiturient.name,faculty.name,subjects.name,rating.rating from abiturient inner join faculty on abiturient.faculty_id=faculty.id inner join subjectsList on faculty.id = subjectsList.faculty_id inner join subjects on subjectslist.id=subjects.id inner join rating on abiturient.id = rating.abiturient_id and subjects.id = rating.subject_id;
+select * from abiturient JOIN faculty on abiturient.faculty_id = faculty.id;

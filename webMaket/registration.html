@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<LINK rel="stylesheet" type="text/css" href="css/div.css">
+<script src="js/autoriz.js"></script>
+
+<title>Приемная комиссия ВГУ - Регистрация абитуриента</title>
+<body id="bod">
+	<div id="main">
+		<div id="header" align="center">
+			<img src="img/EPAM.png" align="middle">
+			<h1 align="center">Приемная комиссия</h1>
+		</div>
+		<div id="menu">
+			<form id="enter" method="post" action="" onsubmit="javascript:check(mail.value, pass.value)">
+				E-mail <INPUT id="mail" type="email" value="p.leshchov@mail.ru"> Пароль <INPUT id="pass"
+					type="password" value="admin"><INPUT type="submit" value="Войти"> <br> <br>
+				<a href="index.html">Забыли пароль?</a>
+			</form>
+			<br> <a href="registration.html">Регистрация нового абитуриента</a>
+		</div>
+		<form method="get" action="abiturient/new.html">
+			<div id="content" align="center">
+				<div id="news">
+					<img src="img/vitebsk_masherova.jpg">
+				</div>
+				<table>
+					<tr>
+						<td>Логин (электронная почта)</td>
+						<td><input type="text" value="user@mail.ru"></td>
+					</tr>
+					<tr>
+						<td>Пароль</td>
+						<td><input type="password" value="user"></td>
+					</tr>
+					<tr>
+						<td>Фамилия</td>
+						<td><input id="name" type="text" value="Железняк"></td>
+					</tr>
+					<tr>
+						<td>Имя</td>
+						<td><input type="text" value="Андрей"></td>
+					</tr>
+					<tr>
+						<td>Отчество</td>
+						<td><input type="text" value="Анатольевич"></td>
+					</tr>
+				</table>
+				<INPUT align="right" type="submit" value="Назад"> <INPUT align="right" type="submit"
+					value="Зарегистрироваться"> <br> <br>ВНИМАНИЕ! Все поля обязательны для
+				заполнения!
+			</div>
+		</form>
+		<div id="footer" align="center">
+			Витебский Государственный Университет им. П.М. Машерова<br> Лаборатория Epam<br>2014
+		</div>
+	</div>
+</body>
+</html>

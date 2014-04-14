@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Приемная комиссия ВГУ - Ведомость</title>
+<LINK rel="stylesheet" type="text/css" href="../css/div.css">
+</head>
+<body id="bod">
+	<div id="main">
+		<div id="header" align="center">
+			<img src="../img/EPAM.png" align="middle">
+			<h1 align="center">Приемная комиссия</h1>
+		</div>
+		<div id="menu">
+			<form action="../result/results.html">
+				<input style="width: 100px" type="submit" value="Ведомость">
+			</form>
+			<br>
+			<form action="../faculty/list.html">
+				<input style="width: 100px" type="submit" value="Факультеты">
+			</form>
+			<br>
+			<form action="../subjects/list.html">
+				<input style="width: 100px" type="submit" value="Предметы">
+			</form>
+			<br>
+			<form action="../index.html">
+				<input style="width: 100px" type="submit" value="Выйти">
+			</form>
+		</div>
+		<div id="content" align="center">
+			<div id="news">
+				<img src="../img/vitebsk_masherova.jpg">
+			</div>
+			<form action="	">
+				Выберите факультет <SELECT style="width: 200px;">
+					<OPTION VALUE="Физический" selected="selected">Физический
+					<OPTION VALUE="Математический">Математический
+					<OPTION VALUE="Художественно-графический">Художественно-графический
+				</SELECT> <br> <br>
+				<table border="1">
+					<tr border="1">
+						<th width="30" align="center">№</th>
+						<th align="center">ФИО</th>
+						<th colspan="2" align="center">Предмет и оценка</th>
+						<th align="center">Утверждение</th>
+					</tr>
+					<tr border="1" align="center">
+						<td rowspan="3" align="center">1</td>
+						<td rowspan="3" align="center"><input width=20px type="text" value="Липский Н.А."></td>
+						<td width="150" align="center">Математика</td>
+						<td><input maxlength="20" max="10" min="1" width=20px type="number" value="8"></td>
+						<td rowspan="3" width="50" align="center"><input type="checkbox"></td>
+					</tr>
+					<tr border="1">
+						<td align="center">Биология</td>
+						<td><input maxlength="20" max="10" min="1" width=20px type="number" value="8"></td>
+					</tr>
+					<tr border="1">
+						<td align="center">Белорусский язык</td>
+						<td><input maxlength="20" max="10" min="1" width=20px type="number" value="8"></td>
+					</tr>
+
+					<tr border="1" align="center">
+						<td rowspan="3" align="center">2</td>
+						<td rowspan="3" align="center"><input width=20px type="text" value="Живец Я.Я."></td>
+						<td width="150" align="center">Математика</td>
+						<td><input maxlength="20" max="10" min="1" width=20px type="number" value="8"></td>
+						<td rowspan="3" width="50" align="center"><input type="checkbox" checked="checked"></td>
+					</tr>
+					<tr border="1">
+						<td align="center">Физика</td>
+						<td><input maxlength="20" max="10" min="1" width=20px type="number" value="8"></td>
+					</tr>
+					<tr border="1">
+						<td align="center">Русский язык</td>
+						<td><input maxlength="20" max="10" min="1" width=20px type="number" value="8"></td>
+					</tr>
+				</table>
+				<BR>
+				<input style="width: 100px" type="reset" value="Сбросить"> <input style="width: 100px"
+					type="submit" value="Сохранить">
+			</form>
+		</div>
+		<footer>
+			<div id="footer" align="center">
+				Витебский Государственный Университет им. П.М. Машерова<br> Лаборатория Epam<br>2014
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

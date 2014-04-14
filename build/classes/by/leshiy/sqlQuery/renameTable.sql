@@ -1,0 +1,1 @@
+ALTER TABLE subject_list RENAME subjectsList;

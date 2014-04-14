@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+#bod {
+	background: url(../img/fon3.jpg);
+}
+
+TABLE {
+	border-collapse: collapse; /* Убираем двойные границы между ячейками */
+	/* 	border: 1px solid #000; Рамка вокруг таблицы */
+}
+
+TD,TH {
+	padding: 2px; /* Поля вокруг текста */
+	border: 1px solid black; /* Рамка вокруг ячеек */
+}
+
+#main {
+	/* 		background: silver; */
+	/* 	background: url(../img/fon4.jpg); */
+	width: 1000px;
+	/* 	height: 530px; */
+	margin-left: 20%;
+	/* 	text-align: center; */
+}
+
+#header {
+	/* 		background: red; */
+	width: 1000px;
+	height: 200px;
+}
+
+#menu {
+	/* 		background: blue; */
+	width: 190px;
+	height: 300px;
+	float: left;
+}
+
+#content {
+	/* 	background: green; */
+	padding-left: 5px;
+	width: 800px;
+	height: 400px;
+	float: left;
+	/* 	border-left: 1px solid black; */
+}
+
+#footer {
+	/* 		background: darkred; */
+	width: 1000px;
+	vertical-align: bottom;
+	/* 	height: 30px; */
+}
+
+#news {
+	/* 	background: yellow; */
+	width: 300px;
+	height: 300px;
+	float: right;
+	margin: 10px;
+	padding-left: 5px;
+	/* 	border-left: 1px solid black; */
+}
